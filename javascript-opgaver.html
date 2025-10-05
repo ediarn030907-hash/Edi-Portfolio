@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Opgaver</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="opgaver.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/nielsbrock.png" alt="Niels Brock" class="logo-img">
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="projects.html">Projekter</a></li>
+            <li><a href="about.html">Om mig</a></li>
+            <li><a href="nielsbrock.html">Niels Brock</a></li>
+            <li><a href="javascript-opgaver.html">JS Opgaver</a></li>
+        </ul>
+    </nav>
+    <main class="forside">
+        <h1>JavaScript Opgaver</h1>
+        <section class="forside-tekst">
+            <h2>1. Skift tekst ved klik på knap</h2>
+            <p id="skiftAfsnit">Dette er et afsnit.</p>
+            <button onclick="skiftTekst()">Skift tekst</button>
+        </section>
+        <section class="forside-tekst">
+            <h2>2. Skift baggrundsfarve</h2>
+            <button onclick="skiftBaggrund()">Skift baggrundsfarve</button>
+        </section>
+        <section class="forside-tekst">
+            <h2>3. Vis/Skjul et element</h2>
+            <button onclick="visSkjul()">Vis/Skjul afsnit</button>
+            <p id="visSkjulAfsnit">Dette afsnit kan vises eller skjules.</p>
+        </section>
+        <section class="forside-tekst">
+            <h2>4. Simpel tæller</h2>
+            <button onclick="tælOp()">Tæl op</button>
+            <button onclick="tælNed()">Tæl ned</button>
+            <span id="tæller">0</span>
+        </section>
+        <section class="forside-tekst">
+            <h2>5. Live tegnoptælling</h2>
+            <input type="text" id="tegnInput" oninput="tegnOptælling()" placeholder="Skriv noget...">
+            <p>Antal tegn: <span id="tegnAntal">0</span></p>
+        </section>
+        <section class="forside-tekst">
+            <h2>6. Vis tekst fra inputfelt</h2>
+            <input type="text" id="visInput" placeholder="Skriv tekst her...">
+            <button onclick="visTekst()">Vis tekst</button>
+            <p id="visAfsnit"></p>
+        </section>
+    </main>
+</body>
+</html>
